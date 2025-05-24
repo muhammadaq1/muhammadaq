@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact Me</title>
+  <meta name='description' content='Renva comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free.'>
+
+  <link rel="canonical" href="https://renva.netlify.app/contact/">
+  <link rel="alternate" type="application/rss+xml" title="Renva" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Me – Renva">
+  <meta name="twitter:description" content="Renva comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free.">
+  <meta name="twitter:image:src" content="../images/07.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Contact Me – Renva">
+  <meta property="og:description" content="Renva comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free.">
+  <meta property="og:image" content="../images/07.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <script>
+    
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    }
+    
+  </script>
+
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="contact-page">
+
+  
+
+  <!-- begin contact -->
+  <div class="contact">
+    <div class="contact__left">
+      
+      <div class="contact__image">
+        <img src="../images/07.jpg" alt="Contact Me" decoding="async" loading="lazy">
+      </div>
+      
+    </div>
+
+    <div class="contact__right">
+      <div class="contact__inner">
+        <a href="../" class="contact__link"><i class="fa-solid fa-arrow-left"></i> Back to home</a>
+        <div class="contact__head">
+          
+            <h1 class="contact__title">Contact Me</h1>
+          
+          
+            <p class="contact__description">Renva comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free.</p>
+          
+        </div>
+        <form class="form" action="https://formspree.io/f/your@email.com" method="POST">
+          <div class="form__group">
+            <label class="form__label screen-reader-text" for="form-name">Your Name</label>
+            <input class="form__input" id="form-name" type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label screen-reader-text" for="form-email">Your Email</label>
+            <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Your email" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label screen-reader-text" for="form-text">Your Message</label>
+            <textarea class="form__input" id="form-text" name="text" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <div class="form__group">
+            <button class="button button--primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- end contact -->
+
+</body>
+
+</html>

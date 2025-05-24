@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Renva</title>
+  <meta name='description' content='Renva is a creative portfolio theme for Jekyll.'>
+
+  <link rel="canonical" href="https://renva.netlify.app/">
+  <link rel="alternate" type="application/rss+xml" title="Renva" href="/feed.xml">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Renva">
+  <meta name="twitter:description" content="Renva is a creative portfolio theme for Jekyll.">
+  <meta name="twitter:image:src" content="https://renva.netlify.app/images/01.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Renva">
+  <meta property="og:description" content="Renva is a creative portfolio theme for Jekyll.">
+  <meta property="og:image" content="https://renva.netlify.app/images/01.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <script>
+    
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    }
+    
+  </script>
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="home-page">
+
+  
+
+  <!-- begin global wrap -->
+  <div class="global-wrap">
+
+    <!-- begin header -->
+<header class="header">
+  <div class="container-big">
+    <div class="row">
+      <div class="header__inner col col-12">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            <img class="logo__image" src="./images/logo.svg" alt="Renva">
+            <img class="logo__image__dark" src="./images/logo-dark.svg" alt="Renva">
+          
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <div></div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main menu">
+          <div class="main-nav__box">
+            <ul class="nav__list list-reset">
+
+              
+              
+              <li class="nav__item">
+                <a href="/" class="nav__link active-link">Home</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="./projects/" class="nav__link">Projects</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="./blog/" class="nav__link">Blog</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="./about/" class="nav__link">About</a>
+              </li>
+              
+              
+              
+              <li class="nav__item">
+                <a href="./contact/" class="nav__link">Contact</a>
+              </li>
+              
+              
+
+            </ul>
+          </div>
+
+          <div class="nav-button">
+            
+            <div class="toggle-theme">
+              <div class="toggle-moon" title="Enable dark mode" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M264 480A232 232 0 0 1 32 248c0-94 54-178.28 137.61-214.67a16 16 0 0 1 21.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0 1 21.06 21.06C442.28 426 358 480 264 480z"/></svg>
+                <span class="toggle-text">Dark</span>
+              </div>
+              <div class="toggle-sun" title="Enable light mode" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 118a22 22 0 0 1-22-22V48a22 22 0 0 1 44 0v48a22 22 0 0 1-22 22zm0 368a22 22 0 0 1-22-22v-48a22 22 0 0 1 44 0v48a22 22 0 0 1-22 22zm113.14-321.14a22 22 0 0 1-15.56-37.55l33.94-33.94a22 22 0 0 1 31.11 31.11l-33.94 33.94a21.93 21.93 0 0 1-15.55 6.44zM108.92 425.08a22 22 0 0 1-15.55-37.56l33.94-33.94a22 22 0 1 1 31.11 31.11l-33.94 33.94a21.94 21.94 0 0 1-15.56 6.45zM464 278h-48a22 22 0 0 1 0-44h48a22 22 0 0 1 0 44zm-368 0H48a22 22 0 0 1 0-44h48a22 22 0 0 1 0 44zm307.08 147.08a21.94 21.94 0 0 1-15.56-6.45l-33.94-33.94a22 22 0 0 1 31.11-31.11l33.94 33.94a22 22 0 0 1-15.55 37.56zM142.86 164.86a21.89 21.89 0 0 1-15.55-6.44l-33.94-33.94a22 22 0 0 1 31.11-31.11l33.94 33.94a22 22 0 0 1-15.56 37.55zM256 358a102 102 0 1 1 102-102 102.12 102.12 0 0 1-102 102z"/></svg>
+                <span class="toggle-text">Light</span>
+              </div>
+            </div>
+            
+            <div class="search-button">
+              <i class="search-button__icon fa-solid fa-magnifying-glass"></i>
+              <span class="search-button__text">Search</span>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <i class="search-input-icon fa-solid fa-magnifying-glass"></i>
+            <i class="icon__search__close fa-solid fa-xmark"></i>
+            <label for="js-search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="js-search-input" class="search__text" autocomplete="off" placeholder="Type to search...">
+          </div>
+          <div class="search-results-list" id="js-results-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__overlay"></div>
+</div>
+<!-- end search -->
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner">
+          
+            <span class="hero__role">Artist ∙ Designer ∙ Thinker</span>
+          
+          
+            <h1 class="hero__title">Hi! I’m James <img src="./images/01-1.jpg" alt="James Brown's Picture" loading="lazy"> <br> I Create Things That Work for Your Business</h1>
+          
+          
+          
+            <a href="./contact/" class="hero__button button button--primary">Let’s make dream together</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+
+
+<div class="container-big">
+  <!-- begin section projects -->
+  <section class="section projects">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+
+          <div class="projects__inner splide">
+            <div class="splide__track animate">
+              <div class="splide__list">
+                
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./project/" class="project__image">
+                      <img class="lazy" data-src="./images/project-1.jpg" alt="Celebrating modern legends through striking poster art">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Poster</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./project/">Celebrating modern legends through striking poster art</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./projects/" class="project__image">
+                      <img class="lazy" data-src="./images/project-2.jpg" alt="Listening to the subtle voices of the wilderness">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Photography</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./projects/">Listening to the subtle voices of the wilderness</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./projects/" class="project__image">
+                      <img class="lazy" data-src="./images/project-3.jpg" alt="Using art with a purpose to influence and Inform">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Poster</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./projects/">Using art with a purpose to influence and Inform</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./projects/" class="project__image">
+                      <img class="lazy" data-src="./images/project-4.jpg" alt="Exploring the expressive power of letters in design">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Design</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./projects/">Exploring the expressive power of letters in design</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./projects/" class="project__image">
+                      <img class="lazy" data-src="./images/project-5.jpg" alt="How the fusion of art and technology is transforming">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Poster</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./projects/">How the fusion of art and technology is transforming</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./projects/" class="project__image">
+                      <img class="lazy" data-src="./images/project-6.jpg" alt="The beauty of minimalism in modern design">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Poster</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./projects/">The beauty of minimalism in modern design</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./projects/" class="project__image">
+                      <img class="lazy" data-src="./images/project-7.jpg" alt="Embracing eco conscious creativity for a greener future">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Design</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./project/">Embracing eco conscious creativity for a greener future</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="project col-3 col-d-6 col-t-12 splide__slide">
+                  <div class="project-content">
+                    <a href="./project/" class="project__image">
+                      <img class="lazy" data-src="./images/project-8.jpg" alt="Visions from the depths of the mind transformed into art">
+                    </a>
+                    <div class="project__info">
+                      
+                        <div class="project__label">Illustration</div>
+                      
+                      <h2 class="project__title">
+                        <a href="./project/">Visions from the depths of the mind transformed into art</a>
+                      </h2>
+                    </div>
+                  </div>
+                </article>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="section__info">
+            
+              <h2 class="section__title">Selected Works</h2>
+            
+            
+              <p class="section__description">This series celebrates cultural diversity and heritage through intricate, detailed designs. Drawing inspiration from various cultures and traditions, I create artworks that tell stories of identity and community. The pieces are rich in symbolism and patterns, offering a deep, visual narrative. By honoring cultural histories, the series fosters a sense of connection and appreciation for global diversity.</p>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section projects -->
+</div>
+
+
+
+<!-- begin testimonials -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          
+            <h2 class="section__title">What People Say?</h2>
+          
+          
+           <p class="section__description">Hear from those who have experienced the transformative power of my artistry and design. These testimonials showcase the success stories born from our collaborative partnerships.</p>
+          
+
+          <div class="client-list">
+            <div class="client-list__box">
+              
+              
+              <div class="client-list__image">
+                <img class="client-list__avatar lazy" data-src="./images/client-1.jpg" alt="John Smith">
+              </div>
+              
+              <div class="client-list__image">
+                <img class="client-list__avatar lazy" data-src="./images/client-2.jpg" alt="David Wilson">
+              </div>
+              
+              <div class="client-list__image">
+                <img class="client-list__avatar lazy" data-src="./images/client-3.jpg" alt="Sarah Davis">
+              </div>
+              
+            </div>
+            <div class="client-list__meta">
+              
+                <p class="client-list__info">Loved by 50+ customers</p>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="108" height="20" fill="none"><path fill="#FFC71D" stroke="#FFC71D" stroke-linecap="round" stroke-linejoin="round" stroke-width=".68" d="m10 1.666 2.575 5.218 5.759.841-4.168 4.059.984 5.732L10 14.81l-5.15 2.707.984-5.732-4.168-4.059 5.759-.841L10 1.666Z"/><path fill="#FFC71D" stroke="#FFC71D" stroke-linecap="round" stroke-linejoin="round" stroke-width=".68" d="m32 1.666 2.575 5.218 5.758.841-4.167 4.059.984 5.732L32 14.81l-5.15 2.707.983-5.732-4.167-4.059 5.759-.841L32 1.666Z"/><path fill="#FFC71D" stroke="#FFC71D" stroke-linecap="round" stroke-linejoin="round" stroke-width=".68" d="m54 1.666 2.575 5.218 5.758.841-4.167 4.059.984 5.732L54 14.81l-5.15 2.707.983-5.732-4.167-4.059 5.759-.841L54 1.666Z"/><path fill="#FFC71D" stroke="#FFC71D" stroke-linecap="round" stroke-linejoin="round" stroke-width=".68" d="m76 1.666 2.575 5.218 5.758.841-4.167 4.059.984 5.732L76 14.81l-5.15 2.707.984-5.732-4.168-4.059 5.759-.841L76 1.666Z"/><path fill="#FFC71D" stroke="#FFC71D" stroke-linecap="round" stroke-linejoin="round" stroke-width=".68" d="m98 1.666 2.575 5.218 5.759.841-4.168 4.059.984 5.732L98 14.81l-5.15 2.707.984-5.732-4.168-4.059 5.759-.841L98 1.666Z"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__slider splide">
+          <div class="splide__arrows slider-controls">
+            <button class="splide__arrow--prev prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="splide__arrow--next next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <div class="splide__track">
+            <div class="splide__list">
+            
+              <div class="testimonial-item splide__slide">
+                <div class="testimonial-content">
+
+                  <div class="testimonial-left">
+                    
+                    <div class="client-image">
+                      <img class="lazy" data-src="./images/client-1.jpg" alt="John Smith">
+                    </div>
+                    
+                  </div>
+
+                  <div class="testimonial-right">
+                    <div class="client-info">
+                      
+                        <p class="client-text">Collaborating was a seamless experience. The creativity and execution brought our project to life in ways we couldn't have imagined.</p>
+                      
+                      
+                        <h3 class="client-name">John Smith</h3>
+                      
+                      
+                        <span class="client-designation">CEO of Creative Innovations</span>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            
+              <div class="testimonial-item splide__slide">
+                <div class="testimonial-content">
+
+                  <div class="testimonial-left">
+                    
+                    <div class="client-image">
+                      <img class="lazy" data-src="./images/client-2.jpg" alt="David Wilson">
+                    </div>
+                    
+                  </div>
+
+                  <div class="testimonial-right">
+                    <div class="client-info">
+                      
+                        <p class="client-text">The elegant and modern design aesthetic was exactly what we needed. The work was both inspiring and flawlessly executed.</p>
+                      
+                      
+                        <h3 class="client-name">David Wilson</h3>
+                      
+                      
+                        <span class="client-designation">Senior Designer at Elegance Studios</span>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            
+              <div class="testimonial-item splide__slide">
+                <div class="testimonial-content">
+
+                  <div class="testimonial-left">
+                    
+                    <div class="client-image">
+                      <img class="lazy" data-src="./images/client-3.jpg" alt="Sarah Davis">
+                    </div>
+                    
+                  </div>
+
+                  <div class="testimonial-right">
+                    <div class="client-info">
+                      
+                        <p class="client-text">The blend of technology and art was masterful. Every piece showcased a deep understanding of both disciplines.</p>
+                      
+                      
+                        <h3 class="client-name">Sarah Davis</h3>
+                      
+                      
+                        <span class="client-designation">Director of FutureTech Labs</span>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->
+
+
+
+<!-- begin blog -->
+<section class="section blog">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          
+            <h2 class="section__title">From My Blog</h2>
+          
+          
+            <p class="section__description">Dive into a world of creativity and inspiration through my blog. Here, I share insights into my artistic process, design trends, and the stories behind my latest projects.</p>
+          
+        </div>
+
+        <div class="row">
+          
+            
+              <div class="article article--grid animate col col-4 col-d-6 col-t-12">
+  <div class="article__inner">
+
+    <div class="article__head">
+      
+
+      
+      <a href="/blog/crafting-compelling-visual-narratives-through-artistic-expression/" class="article__image" aria-hidden="true" tabindex="-1">
+        <img class="lazy" data-src="./images/02.jpg" alt="Crafting compelling visual narratives through artistic expression" decoding="async" loading="lazy">
+      </a>
+      
+    </div>
+
+    <div class="article__content">
+
+      <div class="article__meta">
+        
+        <div class="article__tags">
+        
+          <a href="/tags/?tag=inspiration" class="article__tag">Inspiration</a>
+        
+        </div>
+        
+        <span class="article__date">•<time datetime="2024-07-12T12:01:35+00:00">12 July, 2024</time></span>
+      </div>
+
+      <h2 class="article__title">
+        <a href="./blog/blog-1/">Crafting compelling visual narratives through artistic expression</a>
+      </h2>
+
+      <p class="article__excerpt">Explore how the fusion of art and technology is transforming the creative landscape. In this post, I delve into the innovative tools and techniques that are pushing the boundaries of traditional art forms.</p>
+
+    </div>
+  </div>
+</div>
+            
+              <div class="article article--grid animate col col-4 col-d-6 col-t-12">
+  <div class="article__inner">
+
+    <div class="article__head">
+      
+
+      
+      <a href="/blog/blog-1/" class="article__image" aria-hidden="true" tabindex="-1">
+        <img class="lazy" data-src="./images/03.jpg" alt="Celebrating cultural diversity and its impact on artistic creativity" decoding="async" loading="lazy">
+      </a>
+      
+    </div>
+
+    <div class="article__content">
+
+      <div class="article__meta">
+        
+        <div class="article__tags">
+        
+          <a href="/tags/?tag=inspiration" class="article__tag">Inspiration</a>
+        
+        </div>
+        
+        <span class="article__date">•<time datetime="2024-07-11T12:01:35+00:00">11 July, 2024</time></span>
+      </div>
+
+      <h2 class="article__title">
+        <a href="/blog/blog-1/">Celebrating cultural diversity and its impact on artistic creativity</a>
+      </h2>
+
+      <p class="article__excerpt">Art is a reflection of culture, and cultural diversity enriches the creative process. This article delves into the importance of cultural influences in art and how they contribute to a vibrant and inclusive.</p>
+
+    </div>
+  </div>
+</div>
+            
+              <div class="article article--grid animate col col-4 col-d-6 col-t-12">
+  <div class="article__inner">
+
+    <div class="article__head">
+      
+      <div class="video-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <polygon points="40,30 70,50 40,70"></polygon>
+        </svg>
+      </div>
+      
+
+      
+      <a href="/blog/from-concept-to-completion-understanding-the-creative-process/" class="article__image" aria-hidden="true" tabindex="-1">
+        <img class="lazy" data-src="./images/04.jpg" alt="From concept to completion understanding the creative process" decoding="async" loading="lazy">
+      </a>
+      
+    </div>
+
+    <div class="article__content">
+
+      <div class="article__meta">
+        
+        <div class="article__tags">
+        
+          <a href="/tags/?tag=inspiration" class="article__tag">Inspiration</a>
+        
+        </div>
+        
+        <span class="article__date">•<time datetime="2024-07-08T12:01:35+00:00">08 July, 2024</time></span>
+      </div>
+
+      <h2 class="article__title">
+        <a href="/blog/from-concept-to-completion-understanding-the-creative-process/">From concept to completion understanding the creative process</a>
+      </h2>
+
+      <p class="article__excerpt">Every piece of art starts with an idea, but the journey from concept to completion can be complex and multifaceted. In this article, I take you through my creative process, from initial inspiration to the final touches. Learn about the stages of development, the challenges faced along the way, and the strategies used to overcome them.</p>
+
+    </div>
+  </div>
+</div>
+            
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="section__navigation">
+    <a href="./blog" class="button button--primary section-button">See all posts</a>
+  </div>
+</section>
+<!-- end blog -->
+
+
+
+<div class="container-big">
+  <!-- begin about -->
+  <section class="section about">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="about__inner">
+
+            
+            <div class="col col-6 col-t-8 col-m-10 push-3 push-t-2 push-m-1">
+              <div class="about__image">
+                <img class="lazy" data-src="./images/01.jpg" alt="Short Story About Me">
+              </div>
+            </div>
+            
+
+            <div class="section__info">
+              
+                <h2 class="section__title">Short Story About Me</h2>
+              
+              
+                <p class="section__description">I find inspiration in the everyday moments and the extraordinary experiences that shape our world. My journey began with a passion for visual storytelling, which led me to explore various mediums and techniques.</p>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about -->
+</div>
+
+
+
+<!-- begin faq -->
+<section class="section faq">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          
+            <h2 class="section__title">Need Some Answers?</h2>
+          
+          
+        </div>
+
+        
+        <div class="faq">
+          
+          <div class="faq__item" tabindex="0" data-name="closed">
+            <h3 class="faq__title">What is your creative process?<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path fill="var(--heading-font-color)" d="M8.654 1.168a1.153 1.153 0 1 0-2.308 0V6.36H1.154a1.153 1.153 0 1 0 0 2.308h5.192v5.192a1.153 1.153 0 1 0 2.308 0V8.668h5.192c.638 0 1.154-.516 1.154-1.154 0-.639-.516-1.154-1.154-1.154H8.654V1.168Z"/></svg></h3>
+            <div class="faq__description">
+              <p>My creative process is both structured and flexible, allowing for creativity and precision. It begins with an initial consultation where I gather information about your vision and goals. I then move to the brainstorming and conceptualization phase, where ideas are sketched out and refined. After your approval, I proceed with the creation phase, followed by final adjustments based on your feedback. This collaborative approach ensures that the final product is exactly what you envisioned.</p>
+            </div>
+          </div>
+          
+          <div class="faq__item" tabindex="0" data-name="closed">
+            <h3 class="faq__title">How do you handle custom design requests?<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path fill="var(--heading-font-color)" d="M8.654 1.168a1.153 1.153 0 1 0-2.308 0V6.36H1.154a1.153 1.153 0 1 0 0 2.308h5.192v5.192a1.153 1.153 0 1 0 2.308 0V8.668h5.192c.638 0 1.154-.516 1.154-1.154 0-.639-.516-1.154-1.154-1.154H8.654V1.168Z"/></svg></h3>
+            <div class="faq__description">
+              <p>Handling custom design requests involves a personalized approach where I work closely with clients to understand their unique needs and preferences. The process begins with an in-depth consultation to discuss ideas, inspirations, and project goals. Based on this discussion, I create initial concepts and share them for feedback. Throughout the project, I maintain open communication, providing updates and making necessary adjustments to ensure the final outcome exceeds expectations.</p>
+            </div>
+          </div>
+          
+          <div class="faq__item" tabindex="0" data-name="closed">
+            <h3 class="faq__title">How do you stay inspired and current with design trends?<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path fill="var(--heading-font-color)" d="M8.654 1.168a1.153 1.153 0 1 0-2.308 0V6.36H1.154a1.153 1.153 0 1 0 0 2.308h5.192v5.192a1.153 1.153 0 1 0 2.308 0V8.668h5.192c.638 0 1.154-.516 1.154-1.154 0-.639-.516-1.154-1.154-1.154H8.654V1.168Z"/></svg></h3>
+            <div class="faq__description">
+              <p>Staying inspired and up-to-date with design trends requires continuous learning and exploration. I regularly attend industry conferences, workshops, and exhibitions to gain fresh insights and perspectives. Additionally, I follow leading design blogs, publications, and social media channels to stay informed about the latest trends and innovations. Personal projects and experimentation also play a crucial role in keeping my creative skills sharp and evolving.</p>
+            </div>
+          </div>
+          
+          <div class="faq__item" tabindex="0" data-name="closed">
+            <h3 class="faq__title">What is your typical turnaround time for a project?<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path fill="var(--heading-font-color)" d="M8.654 1.168a1.153 1.153 0 1 0-2.308 0V6.36H1.154a1.153 1.153 0 1 0 0 2.308h5.192v5.192a1.153 1.153 0 1 0 2.308 0V8.668h5.192c.638 0 1.154-.516 1.154-1.154 0-.639-.516-1.154-1.154-1.154H8.654V1.168Z"/></svg></h3>
+            <div class="faq__description">
+              <p>The turnaround time for a project varies depending on its complexity and scope. Typically, smaller projects like single illustrations or simple graphic designs can be completed within a week. More intricate projects, such as full branding packages or detailed custom artworks, may take several weeks to a few months. I always provide a clear timeline at the outset and ensure regular communication to keep clients updated on progress and any potential adjustments.</p>
+            </div>
+          </div>
+          
+          <div class="faq__item" tabindex="0" data-name="closed">
+            <h3 class="faq__title">What payment methods do you accept?<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path fill="var(--heading-font-color)" d="M8.654 1.168a1.153 1.153 0 1 0-2.308 0V6.36H1.154a1.153 1.153 0 1 0 0 2.308h5.192v5.192a1.153 1.153 0 1 0 2.308 0V8.668h5.192c.638 0 1.154-.516 1.154-1.154 0-.639-.516-1.154-1.154-1.154H8.654V1.168Z"/></svg></h3>
+            <div class="faq__description">
+              <p>I accept a variety of payment methods to accommodate different preferences and needs. These include major credit cards, bank transfers, and digital payment platforms like PayPal. Payment terms and schedules are discussed and agreed upon at the start of the project, ensuring transparency and convenience for both parties. A deposit is typically required to begin work, with the balance due upon project completion.</p>
+            </div>
+          </div>
+          
+          <div class="faq__item" tabindex="0" data-name="closed">
+            <h3 class="faq__title">What types of projects do you specialize in?<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none"><path fill="var(--heading-font-color)" d="M8.654 1.168a1.153 1.153 0 1 0-2.308 0V6.36H1.154a1.153 1.153 0 1 0 0 2.308h5.192v5.192a1.153 1.153 0 1 0 2.308 0V8.668h5.192c.638 0 1.154-.516 1.154-1.154 0-.639-.516-1.154-1.154-1.154H8.654V1.168Z"/></svg></h3>
+            <div class="faq__description">
+              <p>I specialize in a wide range of creative projects, including graphic design, illustration, photography, and poster art. My portfolio encompasses branding, editorial design, and bespoke artwork tailored for both commercial and personal use. Whether it's a corporate identity project or a custom illustration, I bring a unique blend of artistic flair and technical expertise to every project. My goal is to deliver visually compelling solutions that resonate with the target audience.</p>
+            </div>
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end faq -->
+
+    </main>
+    <!-- end content -->
+
+    
+<!-- begin subscribe -->
+<section class="section subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="subscribe__inner">
+          <div class="subscribe__head">
+            
+              <h3 class="subscribe__title">Stay inspired weekly. Your friendly dose of tips & insights!</h3>
+            
+            
+              <p class="subscribe__description">Every Sunday, I deliver actionable tips for enhancing productivity, practical life advice, and top-notch insights gathered from various sources, right to your email inbox.</p>
+            
+          </div>
+          <form class="subscribe-form validate"
+            action="//gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp" method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+            <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
+            <input class="subscribe-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="Your email address...">
+            <button class="button button--primary subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">Subscribe</button>
+          </form>
+          <div class="subscribe__bg">
+            
+              <img class="lazy" data-src="./images/subscribe-bg.jpg" alt>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end subscribe -->
+
+
+    <!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="footer__inner">
+          
+            <div class="social">
+              <ul class="social__list list-reset">
+                
+                  <li class="social__item">
+                    <a class="social__link" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook link"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                  </li>
+                
+                  <li class="social__item">
+                    <a class="social__link" href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter link"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+                  </li>
+                
+                  <li class="social__item">
+                    <a class="social__link" href="https://tiktok.com" target="_blank" rel="noopener" aria-label="Tiktok link"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
+                  </li>
+                
+                  <li class="social__item">
+                    <a class="social__link" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram link"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                  </li>
+                
+                  <li class="social__item">
+                    <a class="social__link" href="https://vimeo.com" target="_blank" rel="noopener" aria-label="Vimeo link"><i class="fa-brands fa-vimeo-v"></i>Vimeo</a>
+                  </li>
+                
+                  <li class="social__item">
+                    <a class="social__link" href="https://github.com" target="_blank" rel="noopener" aria-label="Github link"><i class="fa-brands fa-github"></i>Github</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+        </div>
+
+        <div class="copyright">2025 &copy; <a href="/">Renva</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+  </div>
+  <!-- end global wrap -->
+
+  <script src="./js/scripts.js"></script>
+  <script src="./js/common.js"></script>
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById("js-search-input"),
+      resultsContainer: document.getElementById("js-results-container"),
+      json: "/search.json",
+      searchResultTemplate: '<div class="search-results__item"><a href="{url}" class="search-results__image" style="background-image: url({image})"></a> <a href="{url}" class="search-results__link"><time class="search-results-date" datetime="{date}">{date}</time><div class="search-results-title">{title}</div></a></div>',
+      noResultsText: '<div class="no-results">No matches found</div>'
+    });
+  </script>
+</body>
+
+</html>
