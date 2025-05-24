@@ -16379,3 +16379,18 @@ textarea.form__input {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* A soft shadow */
     border-color: #ddd; /* Slightly darker or different border color on hover */
 }
+
+/* --- Slimmer cards in the Selected Works carousel --- */
+@media (min-width: 1024px) {           /* only affects desktop / wide-view */
+  .section.projects .project__image {  /* the card’s image wrapper */
+    aspect-ratio: 1 / 0.75;            /* OLD was 1 / 1.5  → 50 % shorter */
+  }
+
+  /* Fallback for browsers that don’t support aspect-ratio */
+  @supports not (aspect-ratio: 1 / 0.75) {
+    .section.projects .project__image {
+      padding-bottom: 75%;             /* 75 % of width instead of 150 % */
+    }
+  }
+}
+
