@@ -16365,3 +16365,17 @@ textarea.form__input {
 }
 
 /*# sourceMappingURL=main.css.map */
+.skill-item {
+    /* Add a transition for smooth effect */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    /* Make sure the initial border is set if it's not already (it was inline before) */
+    border: 1px solid #eee;\ 
+    /* padding, border-radius, text-align etc. were inline, 
+       you might want to move all .skill-item styles from inline to this CSS rule for consistency */
+}
+  
+.skill-item:hover {
+    transform: translateY(-3px); /* Slightly raise the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* A soft shadow */
+    border-color: #ddd; /* Slightly darker or different border color on hover */
+}
