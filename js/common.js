@@ -147,14 +147,14 @@ document.addEventListener("DOMContentLoaded", function() {
     ============================ */
     if (projectsSlider) {
       new Splide(projectsSlider, {
-        perPage: 4,
-        perMove: 1,
+        perPage: 2,
+        perMove: 2,
         gap: 32,
-        arrows: false,
+        arrows: true,
         pagination: true,
         breakpoints: {
           1400: {
-            perPage: 3
+            perPage: 2
           },
           1024: {
             perPage: 2
