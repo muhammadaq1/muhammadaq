@@ -16415,3 +16415,10 @@ textarea.form__input {
     color: var(--text-muted);   /* or var(--text-color) */
   }
 
+.hero__name {
+    display:inline-block;
+    /* Allow the browser to scale between 0.7 em and 1 em so the name
+       never overflows and visually matches the length of “Hi! I’m James”. */
+    font-size: clamp(0.7em, 4vw, 1em);
+}
+  
